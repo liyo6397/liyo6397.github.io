@@ -1,10 +1,36 @@
-----------------
-About page
-----------------
-<html>
+---
+const pageTitle = "About me";
+
+const skills = [
+    "Python",
+    "C",
+    "GCP",
+    "CI/CD Pipelines in GitLab and GitHub",
+    "Version Control (Git)",
+    "shell script",
+    "Linux administration"
+];
+---
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{pageTitle}</title>
+  </head>
 <body>
-    <h1>About me</h1>
-    <h2>I am the backend software engineer. Tech lead in one of our products which include 4 engineers and 3 research scientists.</h2>
+    <h1>{pageTitle}</h1>
+    <ul>
+        <p> My name is LiYin(Lily) Young</p>
+        <p> I am the backend software engineer. Tech lead in one of our products which include 4 engineers and 3 research scientists.</p>
+
+    </ul>
+    <h2>Skills</h2>
+    <ul>
+        {skills.map((skill => <li>{skill}</li>))}
+    </ul>
+
+
 
 </body>
 </html>
