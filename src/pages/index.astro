@@ -1,26 +1,21 @@
 ---
 // Welcome to Astro! Everything between these triple-dash code fences
 // is your "component frontmatter". It never runs in the browser.
+import '../styles/global.css';
+import Navigation from '../components/Navigation.astro';
 console.log('This runs in your terminal, not the browser!');
+
 ---
 <!-- Below is your "component template." It's just HTML, but with
     some magic sprinkled in to help you build great templates. -->
 <html>
   <body>
 
-
-    <a href="/">Home</a>
-    <a href="/about/">About</a>
-    <a href="/experiences/"> Experiences</a>
-
+    <Navigation />
     <h1>Lily(Li-Yin) Young</h1>
     <h1>About me</h1>
-    <h3>I am the backend software engineer. Tech lead in one of our products which include 4 engineers and 3 research scientists.</h3>
+    <h3>I am the backend software engineer and supervised three Engineers. I am the Tech lead for the products and open-source softwares which include 4 engineers and 3 research scientists.</h3>
   </body>
 
 </html>
-<style>
-  h1 {
-    color: orange;
-  }
-</style>
+
