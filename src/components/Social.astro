@@ -1,0 +1,15 @@
+---
+const { platform, username } = Astro.props;
+---
+<a href={`https://www.${platform}.com/${username}`}>{platform}</a>
+<a href={`https://www.${platform}.com/in/li-yin-lily-young-9a1b3581/?trk=registration`}>LinkedIn</a>
+<a href={`https://${platform}.google.com/citations?user=QKqBLEsAAAAJ&hl=en`}>Google Scholar</a>
+<style>
+    a {
+        padding: 0.5rem 1rem;
+        color: white;
+        background-color: #4c1d95;
+        text-decoration: none;
+    }
+</style>
+---
