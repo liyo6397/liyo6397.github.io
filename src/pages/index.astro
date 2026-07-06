@@ -5,43 +5,17 @@ import '../styles/global.css';
 import Profiles from '../components/Profiles.astro';
 import Navigation from '../components/Navigation.astro';
 import BaseLayout from '../layouts/BaseLayout.astro'
+import Greeting from '../components/Greeting';
+import Header from "../components/Header.astro";
 console.log('This runs in your terminal, not the browser!');
-
+const pageTitle = "Li-Yin(Lily) Young"
 ---
 <!-- Below is your "component template." It's just HTML, but with
     some magic sprinkled in to help you build great templates. -->
 <html>
 
-  <head>
-    <nav>
-      <Navigation />
-    </nav>
-  </head>
-  <body>
-
-    <h1>Lily(Li-Yin) Young</h1>
-    <h1>About me</h1>
-
-    <ul>
-      I am the backend software engineer and supervised three Engineers. I am the Tech lead for the products and open-source softwares which include 4 engineers and 3 research scientists.
-    </ul>
-    <Profiles />
-    <h1>Experiences</h1>
-    <h2> Software Engineer at CIRES (Apr. 2021 - Present) </h2>
-    <ul>
-    <li>Lead the team in the development of the Python packages which include three scientists and four engineers.  Collaborate with the research team to design and implement the software architecture for scientific models.</li>
-    <li>Create the CI/CD piplines for group products which become one of the criteria for pull-request and maintain the documentation.</li>
-    <li> Deployed the cross-platform Python wheels for the Python packages with C and Fortran backends by CPython. </li>
-    <li> Lead the open-source software development and maintenance of the Python packages in our group. </li>
-    <li>Supervising three software developers and mentoring them to become proficient in Git, unit testing, and server and network management.</li>
-    </ul>
-
-    <script>
-      import "../scripts/menu.js";
-    </script>
-
-
-  </body>
-
+  <BaseLayout pageTitle={pageTitle}>
+    <Greeting client:load messages={["Hej", "Hallo", "Hola", "Habari"]} />
+  </BaseLayout>
 </html>
 

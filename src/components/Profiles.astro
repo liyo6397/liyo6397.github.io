@@ -3,10 +3,16 @@ import Social from "./Social.astro"
 ---
 <style>
     a {
-        padding: 0.5rem 1rem;
-        color: white;
-        background-color: #4c1d95;
         text-decoration: none;
+        padding: 0.2rem 1rem;
+        color: #202225;
+        background-color: #B0C4DE;
+        // #4c1d95 is the purple color from my profile picture
+
+    }
+    :global(.dark) a{
+        background-color: #888888;
+        color: #fafafa
     }
     footer {
         display: flex;
@@ -19,4 +25,5 @@ import Social from "./Social.astro"
     <a href={`https://www.linkedin.com/in/li-yin-lily-young-9a1b3581/?trk=registration`}>LinkedIn</a>
     <a href={`https://pypi.org/user/Liyo1122/`}>PyPI Projects</a>
     <a href={`https://scholar.google.com/citations?user=QKqBLEsAAAAJ&hl=en`}>Google Scholar</a>
+    <a href={"/Resume.pdf"} target="_blank" rel="noopener noreferrer">Resume </a>
 </footer>

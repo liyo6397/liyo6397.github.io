@@ -23,8 +23,15 @@ h1 {
 }
 
 h2 {
-    margin: 1rem 0;
+    margin: 1rem 0 0.25rem;
     color: #1a1a1a;
+}
+
+h3 {
+    margin: 0 0 0.75rem;
+    color: #1a1a1a;
+    font-size: 1.1rem;
+    font-weight: normal;
 }
 
 /* nav styles */
@@ -36,6 +43,10 @@ h2 {
     font-size: 1.2rem;
     font-weight: bold;
     padding: 5px 10px;
+}
+
+#main-menu a {
+    text-decoration: none;
 }
 
 
@@ -74,4 +85,39 @@ h2 {
         display: inline-block;
         padding: 15px 20px;
     }
+}
+
+html.dark {
+    background-color: #13181c;
+    color: #f4f4f4;
+}
+
+.dark .menu {
+    background-color: #fff;
+    color: #000;
+}
+
+.dark .nav-links a:hover,
+.dark .nav-links a:focus {
+    color: #0d0950;
+}
+
+.dark .nav-links a {
+    color: #fff;
+}
+
+.dark a {
+    color: #ff9776;
+}
+
+.dark h1 {
+    color: #f4f4f4;
+}
+
+.dark h2 {
+    color: #f4f4f4;
+}
+
+.dark h3 {
+    color: #f4f4f4;
 }
