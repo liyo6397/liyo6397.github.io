@@ -4,28 +4,24 @@ import Navigation from "../components/Navigation.astro";
 ---
 
 <html>
-<body>
-    <head>
-        <title>Experiences</title>
-        <meta charset="UTF-8">
-    </head>
-
-    <body>
+  <head>
+    <title>Experiences</title>
+    <meta charset="UTF-8">
+  </head>
+  <body>
     <Navigation />
 
-    <h1>Experiences</h1>
-    <h2> Software Engineer at CIRES (Apr. 2021 - Present) </h2>
+    <main>
+      <h1>Experiences</h1>
+      <h2>Software Engineer at CIRES (Apr. 2021 - Present)</h2>
 
-    <li> Supervised and mentored a team of three software developers through the end-to-end lifecycle, successful release and maintenance of multiple core open-source Python packages and WebAPIs.</li>
-    <li> Led the engineer team in close collaboration with the science team to integrate and deploy scientific models into production-ready software.</li>
-    <li> Establishing repository guardrails by designing CI/CD pipeline criteria and serving as the key reviewer to audit, validate and approve all incoming pull requests. </li>
-    <li> Developed and deployed the cross-platform Python wheels for C and Fortran backends using CPython, cibuildwheel and Github Actions, while authoring comprehensive deployment documentation for the broader group. </li>
-
-     
-    </body>
-
-
-    
-
-</body>
+      <ul>
+        <li>Led and mentored 3 software engineers through the full lifecycle of multiple open-source Python packages and web APIs, from development through release and maintenance, and documented the release process for the broader team.</li>
+        <li>Partnered with the science team to integrate and deploy 5 scientific models into a Python package published on PyPI, with individual packages downloaded 7,000-52,000 times.</li>
+        <li>Owned repository guardrails, CI/CD criteria, and final PR review across multiple GitHub and GitLab repositories, serving as the primary merge gate for incoming changes across the codebase.</li>
+        <li>Built and shipped cross-platform Python wheels for C and Fortran backends using CPython, cibuildwheel, and GitHub Actions, parallelizing wheel builds to reduce build time by 86%.</li>
+        <li>Designed and built a unified Python package interface for multiple geomagnetic field models used by NGA, enabling batch processing through single API and shipping 3 production releases.</li>
+      </ul>
+    </main>
+  </body>
 </html>
