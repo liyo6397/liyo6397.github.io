@@ -10,4 +10,5 @@ export default defineConfig({
 
   // 2. The repository name as the base path (omit or use '/' if deploying to <username>.github.io)
   base: '/',
+  integrations: [preact()],
 });
