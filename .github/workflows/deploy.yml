@@ -28,9 +28,9 @@ jobs:
 
       - name: Install, build, and upload site assets
         uses: withastro/action@v3
-        # with:
-        #   node-version: 20 # Optional: specify Node version if needed
-        #   package-manager: npm # pnpm | yarn | bun
+        with:
+           package-manager: npm
+
 
   deploy:
     needs: build
