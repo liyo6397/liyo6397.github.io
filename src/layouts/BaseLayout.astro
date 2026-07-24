@@ -1,6 +1,7 @@
 ---
 import Header from '../components/Header.astro';
 import Profiles from '../components/Profiles.astro';
+import Experience from '../components/Experience.astro'
 import '../styles/global.css';
 import ThemeIcon from "../components/ThemeIcon.astro";
 const { pageTitle } = Astro.props;
@@ -29,44 +30,7 @@ const textTransform = "capitalize";
         to turn technical requirements into production-ready systems.
     </ul>
 
-    <h1>Experiences</h1>
-
-    <h2>CIRES</h2>
-    <h3> Software Engineer III (Apr. 2021 - Present) </h3>
-    <ul>
-
-        <li> Tech-led of the product which include three scientists and four engineers.  Collaborate with the research team to design and implement the software architecture for scientific models.</li>
-        <li> Create the CI/CD piplines for GitHub repositories which become one of the criteria for pull-request and maintain the documentation.</li>
-        <li> Led the team in transitioning the backend from C to a Python API and deployed it across development, testing, and production
-            tiers.</li>
-        <li> Parallized the CI/CD pipeline for creating cross-platform wheels on GitHub Action. The total runtime decrese more than 50%.</li>
-        <li> Deployed the cross-platform Python wheels for the Python packages with C and Fortran backends by CPython. </li>
-        <li> Lead the open-source software development and maintenance of the Python packages in our group. Responsible for verifying pull requests from external users and deciding
-            whether to merge them.</li>
-        <li> Supervising three software developers and mentoring them to become proficient in Git, unit testing, and server and network management.</li>
-    </ul>
-
-    <h2>Main Street Exchange</h2>
-    <h3>Full Stack Developer (Jun 2016 - Dec 2016)</h3>
-    <ul>
-        <li>Implemented scripting tools and virtual server environments to troubleshoot real-time system issues.</li>
-        <li>Developed major functionality on the website’s portal including third-party app integration and database
-            management.</li>
-    </ul>
-
-    <h2>Topic Technology</h2>
-    <h3>Machine Learning Developer (Jan 2016 - May 2016)</h3>
-    <ul>
-        <li>Built software tools for extracting unstructured sentimental information from social media for training machine
-            learning model.</li>
-    </ul>
-
-    <h2>Millennium Venture Systems </h2>
-    <h3>Machine Learning Engineer Internship (Jul 2014 - Aug 2014)</h3>
-    <ul>
-        <li>Built the support vector machine(svm) application on time series prediction with C++.</li>
-    </ul>
-
+    <Experience />
        <h1>Education</h1>
         <h2>University of Colorado Boulder</h2>
         <h3>Master of Science in Applied Mathematics (Aug 2018 - Dec 2020)</h3>
