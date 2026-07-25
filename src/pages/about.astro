@@ -1,16 +1,21 @@
 ---
 import '../styles/global.css';
 import Navigation from "../components/Navigation.astro";
-const pageTitle = "About me";
+const pageTitle = "About Me";
 
-const skills = [
-    "Python",
-    "C",
-    "GCP",
-    "CI/CD Pipelines in GitLab and GitHub",
-    "Version Control (Git)",
-    "shell script",
-    "Linux administration"
+const skillGroups = [
+    {
+        category: "Languages",
+        items: ["Python", "C", "SQL"]
+    },
+    {
+        category: "DevOps & CI/CD",
+        items: ["GitHub Actions", "GitLab CI/CD", "cibuildwheel"]
+    },
+    {
+        category: "Platforms & Tools",
+        items: ["GCP", "Git", "Linux", "Bash/Shell scripting", "CPython"]
+    }
 ];
 
 const skillColor = "black";
@@ -35,6 +40,14 @@ const textTransform = "capitalize";
             text-transform: var(--textTransform);
         }
 
+        .skill-group {
+            margin-bottom: 0.75rem;
+        }
+
+        .skill-group strong {
+            margin-right: 0.35rem;
+        }
+
 
     </style>
 </head>
@@ -43,13 +56,15 @@ const textTransform = "capitalize";
 
     <h1>{pageTitle}</h1>
 
-    <ul>
-        <p> My name is LiYin(Lily) Young. I am the backend software engineer. Tech lead in one of our products which include 4 engineers and 3 research scientists.</p>
-
-    </ul>
+    <p>My name is LiYin (Lily) Young. I am a software engineer specializing in Python backend systems, scientific software delivery, release engineering, and DevOps/CI/CD. I lead one of our products with a team of 4 engineers and 3 research scientists.</p>
     <h2>Skills</h2>
     <ul>
-        {skills.map((skill => <li class="skill">{skill}</li>))}
+        {skillGroups.map((group) => (
+            <li class="skill-group">
+                <strong>{group.category}:</strong>
+                <span class="skill">{group.items.join(", ")}</span>
+            </li>
+        ))}
     </ul>
 
 
